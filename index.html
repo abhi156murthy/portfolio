@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Murthy | Business Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Abhishek Murthy Logo">
+            </div>
+            <div class="header-content">
+                <h1>Abhishek Murthy</h1>
+                <p>Business Analyst | Data-Driven Decision Making</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
     <nav>
         <div class="container">
-            <h1><a href="#home">Abhishek Murthy</a></h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,9 +39,9 @@
     <!-- Home Section -->
     <section id="home">
         <div class="container">
-            <h2>Business Analyst</h2>
-            <p>Transforming data into actionable insights to drive business success.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my experience, skills, and the analytical insights I've developed over the years.</p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
     </section>
 
@@ -36,20 +49,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a data-driven Business Analyst with a focus on solving complex business problems. My experience in leveraging data to enhance business processes and improve decision-making has enabled me to deliver tangible results for my clients.</p>
-            <div class="row">
-                <div class="col">
-                    <h3>Education</h3>
-                    <p><strong>B.E. in Computer Science Engineering</strong></p>
-                    <p>Gogte Institute of Technology, Belgaum</p>
-                    <p><strong>GPA:</strong> 7.75/10</p>
-                </div>
-                <div class="col">
-                    <h3>Experience</h3>
-                    <p><strong>Current Role:</strong> Business Analyst at AppsforBharat</p>
-                    <p>Specializing in user acquisition strategies and KPI monitoring systems.</p>
-                </div>
-            </div>
+            <p>I am a Business Analyst with a passion for data-driven decision-making. My expertise lies in transforming data into actionable insights, driving business growth, and enhancing operational efficiency.</p>
         </div>
     </section>
 
@@ -57,8 +57,8 @@
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
-            <div class="row">
-                <div class="col">
+            <div class="skills-content">
+                <div class="skill">
                     <h3>Languages</h3>
                     <ul>
                         <li>SQL</li>
@@ -66,7 +66,7 @@
                         <li>Tableau</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="skill">
                     <h3>Tools</h3>
                     <ul>
                         <li>Mixpanel</li>
@@ -83,32 +83,18 @@
     <section id="experience">
         <div class="container">
             <h2>Professional Experience</h2>
-
-            <div class="job">
-                <h3>Business Analyst</h3>
-                <h4>AppsforBharat, Bangalore | Jan 2024 - Present</h4>
-                <ul>
-                    <li>Transformed user acquisition strategies, leading to a <span class="highlight">150%</span> increase in conversion rates.</li>
-                    <li>Drove a <span class="highlight">31%</span> rise in average order value.</li>
-                    <li>Pioneered the creation of an advanced KPI monitoring system.</li>
-                    <li>Streamlined reporting workflows by automating <span class="highlight">80%</span> of manual processes.</li>
-                    <li>Enhanced product development through rigorous statistical analysis and A/B testing.</li>
-                    <li>Optimized user retention strategies, resulting in reduced acquisition costs.</li>
-                    <li>Developed competitive benchmarking frameworks for new product releases.</li>
-                </ul>
+            <div class="experience-content">
+                <div class="job">
+                    <h3>Business Analyst</h3>
+                    <h4>AppsforBharat, Bangalore | Jan 2024 - Present</h4>
+                    <p>Leading user acquisition strategies, improving conversion rates, and driving significant business growth.</p>
+                </div>
+                <div class="job">
+                    <h3>Business Analyst</h3>
+                    <h4>Gameskraft, Bangalore | Mar 2022 - Dec 2023</h4>
+                    <p>Enhanced user funnel efficiency and contributed to revenue growth through strategic analysis.</p>
+                </div>
             </div>
-
-            <div class="job">
-                <h3>Business Analyst</h3>
-                <h4>Gameskraft, Bangalore | Mar 2022 - Dec 2023</h4>
-                <ul>
-                    <li>Enhanced user funnel efficiency, resulting in improved retention rates.</li>
-                    <li>Contributed to a <span class="highlight">10-12%</span> increase in revenue.</li>
-                    <li>Optimized user acquisition and experience for large-scale gaming tournaments.</li>
-                    <li>Empowered data-driven product development by establishing comprehensive KPI trackers.</li>
-                </ul>
-            </div>
-
         </div>
     </section>
 
@@ -116,7 +102,7 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>I'm available for new opportunities and collaborations. Feel free to reach out!</p>
+            <p>I am open to new opportunities and collaborations. Feel free to reach out!</p>
             <ul>
                 <li>Email: <a href="mailto:abhi156murthy@gmail.com">abhi156murthy@gmail.com</a></li>
                 <li>LinkedIn: <a href="https://linkedin.com/in/abhishek-murthy">linkedin.com/in/abhishek-murthy</a></li>
@@ -130,18 +116,6 @@
             <p>&copy; 2024 Abhishek Murthy. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Smooth Scrolling Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>
