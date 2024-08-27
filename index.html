@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Murthy | Business Analyst</title>
+    <title>Abhishek Murthy | Business Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
     <nav>
         <div class="container">
-            <h1>Abhishek Murthy</h1>
+            <h1><a href="#home">Abhishek Murthy</a></h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,8 +27,8 @@
     <section id="home">
         <div class="container">
             <h2>Business Analyst</h2>
-            <p>Solution-driven Business Analyst with 3 years of experience in delivering timely analysis and ensuring quality.</p>
-            <a href="#contact" class="btn">Contact Me</a>
+            <p>Transforming data into actionable insights to drive business success.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
         </div>
     </section>
 
@@ -35,7 +36,20 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a skilled Business Analyst with a proven track record of solving business-related problems and delivering actionable insights. I am passionate about leveraging data to drive business growth and enhance operational efficiency.</p>
+            <p>I am a data-driven Business Analyst with a focus on solving complex business problems. My experience in leveraging data to enhance business processes and improve decision-making has enabled me to deliver tangible results for my clients.</p>
+            <div class="row">
+                <div class="col">
+                    <h3>Education</h3>
+                    <p><strong>B.E. in Computer Science Engineering</strong></p>
+                    <p>Gogte Institute of Technology, Belgaum</p>
+                    <p><strong>GPA:</strong> 7.75/10</p>
+                </div>
+                <div class="col">
+                    <h3>Experience</h3>
+                    <p><strong>Current Role:</strong> Business Analyst at AppsforBharat</p>
+                    <p>Specializing in user acquisition strategies and KPI monitoring systems.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -43,10 +57,25 @@
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> SQL, Python, Tableau</li>
-                <li><strong>Business Intelligence Tools:</strong> Mixpanel, Clarity, Clevertap, Appsflyer</li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Tableau</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Mixpanel</li>
+                        <li>Clarity</li>
+                        <li>Clevertap</li>
+                        <li>Appsflyer</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -87,7 +116,7 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via email or LinkedIn.</p>
+            <p>I'm available for new opportunities and collaborations. Feel free to reach out!</p>
             <ul>
                 <li>Email: <a href="mailto:abhi156murthy@gmail.com">abhi156murthy@gmail.com</a></li>
                 <li>LinkedIn: <a href="https://linkedin.com/in/abhishek-murthy">linkedin.com/in/abhishek-murthy</a></li>
@@ -101,6 +130,18 @@
             <p>&copy; 2024 Abhishek Murthy. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
